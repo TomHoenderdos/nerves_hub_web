@@ -252,6 +252,7 @@ defmodule NervesHubWeb.CoreComponents do
       time: 400,
       transition: {"ease-out duration-400", "opacity-100", "opacity-0"}
     )
+    |> JS.set_attribute({"hidden", ""}, to: selector)
   end
 
   @doc """
